@@ -17,8 +17,39 @@
         "command": "gitissue-bridge.test",
         "title": "GitIssue Bridge: Test Command",
         "icon": "$(beaker)"
+      },
+      {
+        "command": "gitissue-bridge.showLogs",
+        "title": "GitIssue Bridge: Show Logs",
+        "icon": "$(output)"
+      },
+      {
+        "command": "gitissue-bridge.clearLogs",
+        "title": "GitIssue Bridge: Clear Logs",
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "gitissue-bridge.testError",
+        "title": "GitIssue Bridge: Test Error Handling",
+        "icon": "$(bug)"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "GitIssue Bridge",
+      "properties": {
+        "gitissueBridge.logLevel": {
+          "type": "string",
+          "enum": [
+            "debug",
+            "info",
+            "warn",
+            "error"
+          ],
+          "default": "info",
+          "description": "Logging level for the extension"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
