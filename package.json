@@ -9,6 +9,12 @@
   "categories": [
     "Other"
   ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": "limited",
+      "description": "Git operations and API modifications require workspace trust for security. Other features work without trust."
+    }
+  },
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
@@ -32,6 +38,21 @@
         "command": "gitissue-bridge.testError",
         "title": "GitIssue Bridge: Test Error Handling",
         "icon": "$(bug)"
+      },
+      {
+        "command": "gitissue-bridge.authenticate",
+        "title": "GitIssue Bridge: Authenticate with GitHub",
+        "icon": "$(github)"
+      },
+      {
+        "command": "gitissue-bridge.logout",
+        "title": "GitIssue Bridge: Logout from GitHub",
+        "icon": "$(sign-out)"
+      },
+      {
+        "command": "gitissue-bridge.showUser",
+        "title": "GitIssue Bridge: Show GitHub User",
+        "icon": "$(account)"
       }
     ],
     "configuration": {

@@ -1,6 +1,8 @@
 import * as vscode from 'vscode';
 import { getLogger, LogLevel } from './utils/logger';
 import { getErrorHandler } from './utils/errorHandler';
+import { getWorkspaceTrustManager } from './utils/workspaceTrustManager';
+import { getGitHubAuthManager } from './auth/githubAuthManager';
 
 /**
  * Extension activation entry point
@@ -17,10 +19,20 @@ export function activate(context: vscode.ExtensionContext): void {
   const logLevel = config.get<string>('logLevel', 'info');
   logger.setLogLevel(LogLevel[logLevel.toUpperCase() as keyof typeof LogLevel] || LogLevel.INFO);
 
-  // Register test command
+  // Register test command with workspace trust verification
   const testCommand = vscode.commands.registerCommand('gitissue-bridge.test', async () => {
     try {
-      logger.info('Test command executed');
+      const trustManager = getWorkspaceTrustManager();
+      
+      // Validate workspace before executing
+      const isValid = await trustManager.validateWorkspace();
+      
+      if (!isValid) {
+        logger.warn('Test command cancelled: workspace validation failed');
+        return;
+      }
+      
+      logger.info('Test command executed in trusted workspace');
       await errorHandler.showSuccess('GitIssue Bridge is active! Setup complete.');
     } catch (error) {
       await errorHandler.handle(error, {
@@ -62,11 +74,77 @@ export function activate(context: vscode.ExtensionContext): void {
     }
   );
 
+  // Register GitHub authentication command
+  const authenticateCommand = vscode.commands.registerCommand(
+    'gitissue-bridge.authenticate',
+    async () => {
+      try {
+        const authManager = getGitHubAuthManager();
+        const success = await authManager.authenticate();
+        
+        if (success) {
+          const username = await authManager.getUsername();
+          await errorHandler.showSuccess(`Authenticated as @${username}`);
+        }
+      } catch (error) {
+        await errorHandler.handle(error, {
+          operation: 'authenticate',
+          component: 'Authentication',
+        });
+      }
+    }
+  );
+
+  // Register GitHub logout command
+  const logoutCommand = vscode.commands.registerCommand(
+    'gitissue-bridge.logout',
+    async () => {
+      try {
+        const authManager = getGitHubAuthManager();
+        await authManager.logout();
+      } catch (error) {
+        await errorHandler.handle(error, {
+          operation: 'logout',
+          component: 'Authentication',
+        });
+      }
+    }
+  );
+
+  // Register show GitHub user command
+  const showUserCommand = vscode.commands.registerCommand(
+    'gitissue-bridge.showUser',
+    async () => {
+      try {
+        const authManager = getGitHubAuthManager();
+        const isAuth = await authManager.isAuthenticated();
+        
+        if (!isAuth) {
+          await vscode.window.showInformationMessage(
+            'Not authenticated. Use "Authenticate with GitHub" command first.'
+          );
+          return;
+        }
+        
+        const username = await authManager.getUsername();
+        await vscode.window.showInformationMessage(`Logged in as @${username}`);
+      } catch (error) {
+        await errorHandler.handle(error, {
+          operation: 'showUser',
+          component: 'Authentication',
+        });
+      }
+    }
+  );
+
   context.subscriptions.push(
     testCommand,
     showLogsCommand,
     clearLogsCommand,
     testErrorCommand,
+    authenticateCommand,
+    logoutCommand,
+    showUserCommand,
     logger
   );
 

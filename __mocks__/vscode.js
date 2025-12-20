@@ -20,6 +20,9 @@ const workspace = {
   getConfiguration: jest.fn(() => ({
     get: jest.fn((key, defaultValue) => defaultValue),
   })),
+  isTrusted: true,
+  workspaceFolders: [{ uri: { fsPath: '/mock/workspace' }, name: 'mock-workspace', index: 0 }],
+  onDidGrantWorkspaceTrust: jest.fn(() => ({ dispose: jest.fn() })),
 };
 
 const commands = {
@@ -43,6 +46,15 @@ const ProgressLocation = {
   SourceControl: 1,
 };
 
+const env = {
+  openExternal: jest.fn(() => Promise.resolve(true)),
+};
+
+const authentication = {
+  getSession: jest.fn(() => Promise.resolve(undefined)),
+  onDidChangeSessions: jest.fn(() => ({ dispose: jest.fn() })),
+};
+
 module.exports = {
   window,
   workspace,
@@ -50,4 +62,6 @@ module.exports = {
   Uri,
   StatusBarAlignment,
   ProgressLocation,
+  env,
+  authentication,
 };

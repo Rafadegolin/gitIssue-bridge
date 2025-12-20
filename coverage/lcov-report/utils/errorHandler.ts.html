@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for logger.ts</title>
+    <title>Code coverage report for utils/errorHandler.ts</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="prettify.css" />
-    <link rel="stylesheet" href="base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(sort-arrow-sprite.png);
+            background-image: url(../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> logger.ts</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">utils</a> errorHandler.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">97.14% </span>
+                <span class="strong">78.18% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>68/70</span>
+                <span class='fraction'>43/55</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">95.83% </span>
+                <span class="strong">73.07% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>23/24</span>
+                <span class='fraction'>19/26</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">94.73% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>18/19</span>
+                <span class='fraction'>9/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">97.05% </span>
+                <span class="strong">78.18% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>66/68</span>
+                <span class='fraction'>43/55</span>
             </div>
         
             
@@ -241,154 +241,25 @@
 <a name='L176'></a><a href='#L176'>176</a>
 <a name='L177'></a><a href='#L177'>177</a>
 <a name='L178'></a><a href='#L178'>178</a>
-<a name='L179'></a><a href='#L179'>179</a>
-<a name='L180'></a><a href='#L180'>180</a>
-<a name='L181'></a><a href='#L181'>181</a>
-<a name='L182'></a><a href='#L182'>182</a>
-<a name='L183'></a><a href='#L183'>183</a>
-<a name='L184'></a><a href='#L184'>184</a>
-<a name='L185'></a><a href='#L185'>185</a>
-<a name='L186'></a><a href='#L186'>186</a>
-<a name='L187'></a><a href='#L187'>187</a>
-<a name='L188'></a><a href='#L188'>188</a>
-<a name='L189'></a><a href='#L189'>189</a>
-<a name='L190'></a><a href='#L190'>190</a>
-<a name='L191'></a><a href='#L191'>191</a>
-<a name='L192'></a><a href='#L192'>192</a>
-<a name='L193'></a><a href='#L193'>193</a>
-<a name='L194'></a><a href='#L194'>194</a>
-<a name='L195'></a><a href='#L195'>195</a>
-<a name='L196'></a><a href='#L196'>196</a>
-<a name='L197'></a><a href='#L197'>197</a>
-<a name='L198'></a><a href='#L198'>198</a>
-<a name='L199'></a><a href='#L199'>199</a>
-<a name='L200'></a><a href='#L200'>200</a>
-<a name='L201'></a><a href='#L201'>201</a>
-<a name='L202'></a><a href='#L202'>202</a>
-<a name='L203'></a><a href='#L203'>203</a>
-<a name='L204'></a><a href='#L204'>204</a>
-<a name='L205'></a><a href='#L205'>205</a>
-<a name='L206'></a><a href='#L206'>206</a>
-<a name='L207'></a><a href='#L207'>207</a>
-<a name='L208'></a><a href='#L208'>208</a>
-<a name='L209'></a><a href='#L209'>209</a>
-<a name='L210'></a><a href='#L210'>210</a>
-<a name='L211'></a><a href='#L211'>211</a>
-<a name='L212'></a><a href='#L212'>212</a>
-<a name='L213'></a><a href='#L213'>213</a>
-<a name='L214'></a><a href='#L214'>214</a>
-<a name='L215'></a><a href='#L215'>215</a>
-<a name='L216'></a><a href='#L216'>216</a>
-<a name='L217'></a><a href='#L217'>217</a>
-<a name='L218'></a><a href='#L218'>218</a>
-<a name='L219'></a><a href='#L219'>219</a>
-<a name='L220'></a><a href='#L220'>220</a>
-<a name='L221'></a><a href='#L221'>221</a>
-<a name='L222'></a><a href='#L222'>222</a>
-<a name='L223'></a><a href='#L223'>223</a>
-<a name='L224'></a><a href='#L224'>224</a>
-<a name='L225'></a><a href='#L225'>225</a>
-<a name='L226'></a><a href='#L226'>226</a>
-<a name='L227'></a><a href='#L227'>227</a>
-<a name='L228'></a><a href='#L228'>228</a>
-<a name='L229'></a><a href='#L229'>229</a>
-<a name='L230'></a><a href='#L230'>230</a>
-<a name='L231'></a><a href='#L231'>231</a>
-<a name='L232'></a><a href='#L232'>232</a>
-<a name='L233'></a><a href='#L233'>233</a>
-<a name='L234'></a><a href='#L234'>234</a>
-<a name='L235'></a><a href='#L235'>235</a>
-<a name='L236'></a><a href='#L236'>236</a>
-<a name='L237'></a><a href='#L237'>237</a>
-<a name='L238'></a><a href='#L238'>238</a>
-<a name='L239'></a><a href='#L239'>239</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
+<a name='L179'></a><a href='#L179'>179</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">25x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">25x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">23x</span>
-<span class="cline-any cline-yes">23x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -397,11 +268,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -409,72 +275,47 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">21x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">83x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">83x</span>
-<span class="cline-any cline-yes">581x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">83x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">16x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">16x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-yes">115x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">67x</span>
-<span class="cline-any cline-yes">67x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">67x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">67x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -482,47 +323,45 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">42x</span>
-<span class="cline-any cline-yes">39x</span>
-<span class="cline-any cline-yes">39x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">14x</span>
-<span class="cline-any cline-yes">14x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -536,246 +375,227 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import * as vscode from 'vscode';
+import { getLogger } from './logger';
 &nbsp;
 /**
- * Log levels for the logger
+ * Error severity levels
  */
-export enum LogLevel {
-  DEBUG = 0,
-  INFO = 1,
-  WARN = 2,
-  ERROR = 3,
+export enum ErrorSeverity {
+  INFO = 'info',
+  WARNING = 'warning',
+  ERROR = 'error',
 }
 &nbsp;
 /**
- * Centralized logging service with automatic sensitive data sanitization
- * Implements singleton pattern to ensure single instance across extension
+ * Context for error handling
  */
-export class Logger {
-  private static instance: Logger;
-  private outputChannel: vscode.OutputChannel;
-  private logLevel: LogLevel = LogLevel.INFO;
+export interface ErrorContext {
+  operation?: string;
+  component?: string;
+  metadata?: Record&lt;string, unknown&gt;;
+}
 &nbsp;
-  /**
-   * Patterns for detecting sensitive data
-   */
-  private readonly sensitivePatterns = [
-    // GitHub tokens: ghp_, gho_, ghs_, ghr_
-    { pattern: /ghp_[a-zA-Z0-9]{36}/g, replacement: 'ghp_[REDACTED]' },
-    { pattern: /gho_[a-zA-Z0-9]{36}/g, replacement: 'gho_[REDACTED]' },
-    { pattern: /ghs_[a-zA-Z0-9]{36}/g, replacement: 'ghs_[REDACTED]' },
-    { pattern: /ghr_[a-zA-Z0-9]{36}/g, replacement: 'ghr_[REDACTED]' },
-    // Generic tokens (40+ chars of alphanumeric)
-    { pattern: /\b[a-f0-9]{40,}\b/gi, replacement: '[REDACTED_TOKEN]' },
-    // Authorization headers
-    {
-      pattern: /authorization:\s*bearer\s+[^\s]+/gi,
-      replacement: 'authorization: bearer [REDACTED]',
-    },
-    {
-      pattern: /authorization:\s*token\s+[^\s]+/gi,
-      replacement: 'authorization: token [REDACTED]',
-    },
-  ];
+/**
+ * Centralized error handling service
+ * Provides consistent error reporting and user notifications
+ */
+export class ErrorHandler {
+  private static instance: ErrorHandler;
+  private logger = getLogger();
 &nbsp;
-  /**
-   * Sensitive field names to redact
-   */
-  private readonly sensitiveFields = [
-    'token',
-    'password',
-    'secret',
-    'apiKey',
-    'api_key',
-    'accessToken',
-    'access_token',
-    'refreshToken',
-    'refresh_token',
-    'privateKey',
-    'private_key',
-    'authorization',
-  ];
-&nbsp;
-  private constructor() {
-    this.outputChannel = vscode.window.createOutputChannel('GitIssue Bridge');
-  }
+  private constructor() {}
 &nbsp;
   /**
    * Get singleton instance
    */
-  public static getInstance(): Logger {
-    if (!Logger.instance) {
-      Logger.instance = new Logger();
+  public static getInstance(): ErrorHandler {
+    if (!ErrorHandler.instance) {
+      ErrorHandler.instance = new ErrorHandler();
     }
-    return Logger.instance;
+    return ErrorHandler.instance;
   }
 &nbsp;
   /**
-   * Set minimum log level
+   * Get user-friendly error message
    */
-  public setLogLevel(level: LogLevel): void {
-    this.logLevel = level;
-    this.info(`Log level set to ${LogLevel[level]}`);
-  }
-&nbsp;
-  /**
-   * Get current log level
-   */
-  public getLogLevel(): LogLevel {
-    return this.logLevel;
-  }
-&nbsp;
-  /**
-   * Show output channel in VS Code
-   */
-  public show(): void {
-    this.outputChannel.show();
-  }
-&nbsp;
-  /**
-   * Hide output channel
-   */
-  public hide(): void {
-    this.outputChannel.hide();
-  }
-&nbsp;
-  /**
-   * Clear all logs
-   */
-  public clear(): void {
-    this.outputChannel.clear();
-  }
-&nbsp;
-  /**
-   * Sanitize sensitive data from message
-   */
-  private sanitize(message: string): string {
-    let sanitized = message;
-&nbsp;
-    // Apply pattern-based sanitization
-    for (const { pattern, replacement } of this.sensitivePatterns) {
-      sanitized = sanitized.replace(pattern, replacement);
-    }
-&nbsp;
-    return sanitized;
-  }
-&nbsp;
-  /**
-   * Sanitize object by redacting sensitive fields
-   */
-  private sanitizeObject(obj: unknown): unknown {
-    if (obj === null || obj === undefined) {
-      return obj;
-    }
-&nbsp;
-    if (typeof obj !== 'object') {
-      return obj;
-    }
-&nbsp;
-    if (Array.isArray(obj)) {
-      return obj.map(item =&gt; this.sanitizeObject(item));
-    }
-&nbsp;
-    const sanitized: Record&lt;string, unknown&gt; = {};
-    for (const [key, value] of Object.entries(obj)) {
-      const lowerKey = key.toLowerCase();
-      if (this.sensitiveFields.some(field =&gt; lowerKey.includes(field.toLowerCase()))) {
-        sanitized[key] = '[REDACTED]';
-      } else if (typeof value === 'object' &amp;&amp; value !== null) {
-        sanitized[key] = this.sanitizeObject(value);
-      } else {
-        sanitized[key] = value;
+  private getUserMessage(error: unknown): string {
+    if (error instanceof Error) {
+      // Map common errors to user-friendly messages
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (error.message.includes('ENOTFOUND')) {
+<span class="cstat-no" title="statement not covered" >        return 'Network error: Unable to connect to GitHub. Please check your internet connection.';</span>
       }
-    }
-&nbsp;
-    return sanitized;
-  }
-&nbsp;
-  /**
-   * Format message with optional data
-   */
-  private formatMessage(level: string, message: string, data?: unknown): string {
-    const timestamp = new Date().toISOString();
-    let formatted = `[${timestamp}] [${level}] ${this.sanitize(message)}`;
-&nbsp;
-    if (data !== undefined) {
-      try {
-        const sanitizedData = this.sanitizeObject(data);
-        const dataStr = JSON.stringify(sanitizedData, null, 2);
-        formatted += `\n${this.sanitize(dataStr)}`;
-      } catch (error) {
-<span class="cstat-no" title="statement not covered" >        formatted += `\n[Error formatting data: ${error}]`;</span>
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (error.message.includes('401') || error.message.includes('Unauthorized')) {
+<span class="cstat-no" title="statement not covered" >        return 'Authentication failed. Please sign in to GitHub again.';</span>
       }
-    }
-&nbsp;
-    return formatted;
-  }
-&nbsp;
-  /**
-   * Log debug message
-   */
-  public debug(message: string, data?: unknown): void {
-    if (this.logLevel &lt;= LogLevel.DEBUG) {
-      const formatted = this.formatMessage('DEBUG', message, data);
-      this.outputChannel.appendLine(formatted);
-    }
-  }
-&nbsp;
-  /**
-   * Log info message
-   */
-  public info(message: string, data?: unknown): void {
-    if (this.logLevel &lt;= LogLevel.INFO) {
-      const formatted = this.formatMessage('INFO', message, data);
-      this.outputChannel.appendLine(formatted);
-    }
-  }
-&nbsp;
-  /**
-   * Log warning message
-   */
-  public warn(message: string, data?: unknown): void {
-    if (this.logLevel &lt;= LogLevel.WARN) {
-      const formatted = this.formatMessage('WARN', message, data);
-      this.outputChannel.appendLine(formatted);
-    }
-  }
-&nbsp;
-  /**
-   * Log error message
-   */
-  public error(message: string, error?: unknown, data?: unknown): void {
-    if (this.logLevel &lt;= LogLevel.ERROR) {
-      let errorDetails = '';
-&nbsp;
-      if (error instanceof Error) {
-        errorDetails = `\nError: ${error.message}\nStack: ${this.sanitize(error.stack || <span class="branch-1 cbranch-no" title="branch not covered" >'')</span>}`;
-      } else if (error) {
-        errorDetails = `\nError: ${JSON.stringify(this.sanitizeObject(error))}`;
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (error.message.includes('403') || error.message.includes('Forbidden')) {
+<span class="cstat-no" title="statement not covered" >        return 'Access denied. You may not have permission for this operation.';</span>
+      }
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (error.message.includes('404') || error.message.includes('Not Found')) {
+<span class="cstat-no" title="statement not covered" >        return 'Resource not found. The requested item may have been deleted or moved.';</span>
+      }
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (error.message.includes('rate limit')) {
+<span class="cstat-no" title="statement not covered" >        return 'GitHub API rate limit exceeded. Please try again later.';</span>
       }
 &nbsp;
-      const formatted = this.formatMessage('ERROR', message + errorDetails, data);
-      this.outputChannel.appendLine(formatted);
+      return error.message;
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof error === 'string') {</span>
+<span class="cstat-no" title="statement not covered" >      return error;</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return 'An unexpected error occurred. Please check the logs for more details.';</span>
+  }
+&nbsp;
+  /**
+   * Handle error with context and show to user
+   */
+  public async handle(
+    error: unknown,
+    context?: ErrorContext,
+    severity: ErrorSeverity = ErrorSeverity.ERROR
+  ): Promise&lt;void&gt; {
+    const userMessage = this.getUserMessage(error);
+    const operation = context?.operation || 'Unknown operation';
+    const component = context?.component || 'Unknown component';
+&nbsp;
+    // Log error with full context
+    this.logger.error(`Error in ${component} during ${operation}`, error, context?.metadata);
+&nbsp;
+    // Show appropriate notification to user
+    const actions = ['Show Logs', 'Dismiss'];
+&nbsp;
+    let selectedAction: string | undefined;
+&nbsp;
+    switch (severity) {
+      case ErrorSeverity.INFO:
+        selectedAction = await vscode.window.showInformationMessage(userMessage, ...actions);
+        break;
+      case ErrorSeverity.WARNING:
+        selectedAction = await vscode.window.showWarningMessage(userMessage, ...actions);
+        break;
+      case ErrorSeverity.ERROR:
+        selectedAction = await vscode.window.showErrorMessage(userMessage, ...actions);
+        break;
+    }
+&nbsp;
+    // Handle user action
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (selectedAction === 'Show Logs') {
+<span class="cstat-no" title="statement not covered" >      this.logger.show();</span>
     }
   }
 &nbsp;
   /**
-   * Dispose logger resources
+   * Handle error and return boolean success indicator
    */
-  public <span class="fstat-no" title="function not covered" >dispose(</span>): void {
-<span class="cstat-no" title="statement not covered" >    this.outputChannel.dispose();</span>
+  public async handleWithResult(
+    error: unknown,
+    context?: ErrorContext,
+    severity: ErrorSeverity = ErrorSeverity.ERROR
+  ): Promise&lt;boolean&gt; {
+    await this.handle(error, context, severity);
+    return false;
+  }
+&nbsp;
+  /**
+   * Show error message without logging (for validation errors)
+   */
+  public <span class="fstat-no" title="function not covered" >async </span>showValidationError(message: string): Promise&lt;void&gt; {
+<span class="cstat-no" title="statement not covered" >    await vscode.window.showWarningMessage(`Validation Error: ${message}`);</span>
+  }
+&nbsp;
+  /**
+   * Show success message
+   */
+  public <span class="fstat-no" title="function not covered" >async </span>showSuccess(message: string): Promise&lt;void&gt; {
+<span class="cstat-no" title="statement not covered" >    await vscode.window.showInformationMessage(`✅ ${message}`);</span>
+  }
+&nbsp;
+  /**
+   * Show info message with optional actions
+   */
+  public <span class="fstat-no" title="function not covered" >async </span>showInfo(message: string, ...actions: string[]): Promise&lt;string | undefined&gt; {
+<span class="cstat-no" title="statement not covered" >    return await vscode.window.showInformationMessage(message, ...actions);</span>
+  }
+&nbsp;
+  /**
+   * Wrap async operation with error handling
+   */
+  public async wrapAsync&lt;T&gt;(
+    operation: () =&gt; Promise&lt;T&gt;,
+    context: ErrorContext
+  ): Promise&lt;T | undefined&gt; {
+    try {
+      return await operation();
+    } catch (error) {
+      await this.handle(error, context);
+      return undefined;
+    }
+  }
+&nbsp;
+  /**
+   * Wrap sync operation with error handling
+   */
+  public wrap&lt;T&gt;(operation: () =&gt; T, context: ErrorContext): T | undefined {
+    try {
+      return operation();
+    } catch (error) {
+      void this.handle(error, context);
+      return undefined;
+    }
   }
 }
 &nbsp;
 /**
- * Get logger instance (convenience function)
+ * Get error handler instance (convenience function)
  */
-export function getLogger(): Logger {
-  return Logger.getInstance();
+export function getErrorHandler(): ErrorHandler {
+  return ErrorHandler.getInstance();
 }
 &nbsp;</pre></td></tr></table></pre>
 
@@ -784,16 +604,16 @@ export function getLogger(): Logger {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-12-20T05:25:13.486Z
+                at 2025-12-20T05:41:28.655Z
             </div>
-        <script src="prettify.js"></script>
+        <script src="../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="sorter.js"></script>
-        <script src="block-navigation.js"></script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
     </body>
 </html>
     
