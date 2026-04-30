@@ -1,13 +1,3 @@
-📝 Criar README.md Profissional
-Vamos substituir por um README completo e atraente!
-
-📍 PASSO 1: Substituir README.md
-Abra o arquivo:
-powershell
-code README.md
-Substitua TODO o conteúdo por:
-text
-
 # 🌉 GitIssue Bridge
 
 <p align="center">
